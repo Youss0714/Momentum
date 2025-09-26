@@ -10,14 +10,14 @@ const testimonials = [
   },
   {
     name: "Michael Chen",
-    position: "Directeur Financier, FinanceGroup",
-    content: "Les services de conseil financier fournis étaient exceptionnels. Youss nous a aidés à optimiser nos stratégies de trading et à améliorer considérablement la performance de notre portefeuille.",
+    position: "Directeur Commercial, TradingPro",
+    content: "La formation en trading fournie était exceptionnelle. Youss nous a aidés à comprendre les marchés et à développer des stratégies de trading efficaces et rentables.",
     color: "secondary"
   },
   {
     name: "Emily Rodriguez",
     position: "Fondatrice, StartupVentures",
-    content: "Travailler avec Youss sur notre système comptable a été un tournant. La solution est robuste, conviviale et a complètement rationalisé nos processus financiers.",
+    content: "Travailler avec Youss sur notre site web e-commerce a été un tournant. La solution est moderne, performante et a complètement transformé notre présence digitale.",
     color: "accent"
   }
 ];

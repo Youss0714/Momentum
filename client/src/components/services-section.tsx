@@ -55,7 +55,7 @@ export default function ServicesSection() {
             Services Professionnels
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-services-subtitle">
-            Solutions complètes en développement, finance et trading pour faire progresser votre entreprise
+            Solutions complètes en développement, web et logistique pour faire progresser votre entreprise
           </p>
         </motion.div>
 

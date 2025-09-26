@@ -5,28 +5,28 @@ const qualifications = [
   {
     icon: GraduationCap,
     title: "Formation Académique",
-    description: "Diplômes avancés en Finance et Informatique avec développement professionnel continu",
+    description: "Diplômes avancés en Informatique et Business avec développement professionnel continu",
     color: "primary"
   },
   {
     icon: Briefcase,
     title: "Expérience Professionnelle",
-    description: "Vaste expérience en développement logiciel d'entreprise et conseil financier",
+    description: "Vaste expérience en développement d'applications, sites web et solutions digitales",
     color: "secondary"
   },
   {
     icon: Award,
     title: "Certifications",
-    description: "Analyste Financier Certifié (CFA) et certifié dans plusieurs frameworks de développement",
+    description: "Certifié dans plusieurs technologies modernes et frameworks de développement",
     color: "accent"
   }
 ];
 
 const skills = [
-  "Analyse Financière",
-  "Développement Logiciel", 
-  "Stratégies de Trading",
-  "Conseil en Affaires"
+  "Développement Mobile",
+  "Sites Web Professionnels", 
+  "Formation Trading",
+  "Logistique Maritime"
 ];
 
 export default function AboutSection() {
@@ -45,7 +45,7 @@ export default function AboutSection() {
               À Propos de Youss
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="text-about-description">
-              Avec plus de 5 ans d'expérience dans les services financiers et le développement logiciel, je me spécialise dans la fourniture de solutions complètes qui font le pont entre technologie et finance.
+              Avec plus de 5 ans d'expérience dans le développement digital et les services professionnels, je me spécialise dans la fourniture de solutions complètes qui allient expertise technique et vision business.
             </p>
             
             <div className="space-y-6 mb-10" data-testid="div-qualifications">

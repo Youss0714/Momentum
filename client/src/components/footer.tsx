@@ -39,7 +39,7 @@ export default function Footer() {
               Youss
             </h3>
             <p className="text-primary-foreground/80 mb-6 max-w-md" data-testid="text-footer-description">
-              Services professionnels financiers et de développement conçus pour élever votre entreprise vers de nouveaux sommets avec des solutions expertes et un support dédié.
+              Services professionnels spécialisés en développement, trading et logistique conçus pour élever votre entreprise vers de nouveaux sommets avec des solutions expertes et un support dédié.
             </p>
             <div className="flex space-x-4" data-testid="div-social-links">
               <a 

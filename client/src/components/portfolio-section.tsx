@@ -17,10 +17,10 @@ const projects = [
     technologies: ["Python", "Django", "PostgreSQL"]
   },
   {
-    title: "Suite Financière",
-    description: "Solution comptable complète avec rapports automatisés et fonctionnalités de préparation fiscale.",
+    title: "Plateforme Logistique",
+    description: "Solution de transit maritime complète avec suivi en temps réel et gestion automatisée des expéditions.",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    alt: "Interface logicielle comptable avec rapports financiers",
+    alt: "Interface de gestion logistique avec tracking maritime",
     technologies: ["Vue.js", "Laravel", "MySQL"]
   }
 ];
