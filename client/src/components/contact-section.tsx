@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    value: "+1 (555) 123-4567",
+    value: "+223 02 67 74 51 48 / +225 07 14 17 40 82 / +225 05 46 26 29 54",
     color: "secondary"
   },
   {
