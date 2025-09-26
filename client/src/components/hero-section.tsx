@@ -24,8 +24,8 @@ export default function HeroSection() {
             className="text-5xl md:text-7xl font-bold text-foreground mb-6 font-sans"
             data-testid="text-hero-title"
           >
-            Services Financiers
-            <span className="text-primary block">Professionnels</span>
+            Solutions Digitales
+            <span className="text-primary block">Professionnelles</span>
           </motion.h1>
           
           <motion.p 
@@ -35,7 +35,7 @@ export default function HeroSection() {
             className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
             data-testid="text-hero-subtitle"
           >
-            Services experts en développement, comptabilité, trading et conseil financier conçus pour élever votre entreprise vers de nouveaux sommets
+            Services experts en développement d'applications, sites web professionnels, trading & formation et transit maritime conçus pour élever votre entreprise vers de nouveaux sommets
           </motion.p>
           
           <motion.div 
