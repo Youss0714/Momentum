@@ -5,19 +5,19 @@ const qualifications = [
   {
     icon: GraduationCap,
     title: "Formation Académique",
-    description: "Diplômes avancés en Informatique et Business avec développement professionnel continu",
+    description: "Équipe hautement qualifiée avec diplômes avancés en Informatique et Business, engagement au développement professionnel continu",
     color: "primary"
   },
   {
     icon: Briefcase,
     title: "Expérience Professionnelle",
-    description: "Vaste expérience en développement d'applications, sites web et solutions digitales",
+    description: "Expérience collective approfondie en développement d'applications, sites web et solutions digitales innovantes",
     color: "secondary"
   },
   {
     icon: Award,
     title: "Certifications",
-    description: "Certifié dans plusieurs technologies modernes et frameworks de développement",
+    description: "Expertise certifiée de l'équipe dans les technologies modernes et frameworks de développement de pointe",
     color: "accent"
   }
 ];
@@ -45,7 +45,7 @@ export default function AboutSection() {
               À Propos de Momentum group
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="text-about-description">
-              Avec plus de 5 ans d'expérience dans le développement digital et les services professionnels, je me spécialise dans la fourniture de solutions complètes qui allient expertise technique et vision business.
+              Avec plus de 5 ans d'expérience dans le développement digital et les services professionnels, notre équipe se spécialise dans la fourniture de solutions complètes qui allient expertise technique et vision business stratégique.
             </p>
             
             <div className="space-y-6 mb-10" data-testid="div-qualifications">
@@ -122,8 +122,8 @@ export default function AboutSection() {
             data-testid="div-about-image"
           >
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-              alt="Professional portrait of Momentum group" 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
+              alt="Équipe professionnelle de Momentum group" 
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               data-testid="img-about-portrait"
             />
@@ -138,7 +138,7 @@ export default function AboutSection() {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold" data-testid="text-experience-years">5+</div>
-                <div className="text-sm" data-testid="text-experience-label">Années d'Expérience</div>
+                <div className="text-sm" data-testid="text-experience-label">Années d'Expérience Collective</div>
               </div>
             </motion.div>
           </motion.div>
