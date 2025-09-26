@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Award } from "lucide-react";
+import teamImage from "@assets/WhatsApp Image 2025-09-26 à 22.38.59_44f7f5ca_1758926423817.jpg";
 
 const qualifications = [
   {
@@ -122,7 +123,7 @@ export default function AboutSection() {
             data-testid="div-about-image"
           >
             <img 
-              src="@assets/WhatsApp Image 2025-09-26 à 22.38.59_44f7f5ca_1758926423817.jpg" 
+              src={teamImage} 
               alt="Équipe professionnelle de Momentum group" 
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               data-testid="img-about-portrait"
