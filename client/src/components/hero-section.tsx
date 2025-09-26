@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import tradingImage from "@assets/WhatsApp Image 2025-09-26 à 21.56.48_0d482c9c_1758923961538.jpg";
 import developmentImage from "@assets/WhatsApp Image 2025-09-26 à 21.56.49_83202991_1758923971163.jpg";
 import shippingImage from "@assets/WhatsApp Image 2025-09-26 à 21.56.50_7728ebb2_1758923982640.jpg";
-import headerTextImage from "@assets/image_1758924037504.png";
 
 export default function HeroSection() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -14,8 +13,7 @@ export default function HeroSection() {
   const images = [
     { src: tradingImage, alt: "Trading & Formation" },
     { src: developmentImage, alt: "Développement d'Applications" },
-    { src: shippingImage, alt: "Transit Maritime" },
-    { src: headerTextImage, alt: "Solutions Digitales Professionnelles" }
+    { src: shippingImage, alt: "Transit Maritime" }
   ];
 
   useEffect(() => {
