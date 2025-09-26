@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
@@ -32,6 +32,12 @@ const contactInfo = [
     title: "Localisation",
     value: "Tema, (Greater ACCRA) GHANA",
     color: "accent"
+  },
+  {
+    icon: MessageCircle,
+    title: "WhatsApp",
+    value: "+233 26 774 5148",
+    color: "primary"
   }
 ];
 
