@@ -37,7 +37,8 @@ const contactInfo = [
     icon: MessageCircle,
     title: "WhatsApp",
     value: "+233 26 774 5148",
-    color: "primary"
+    color: "primary",
+    link: "https://wa.me/233267745148"
   }
 ];
 
@@ -143,9 +144,21 @@ export default function ContactSection() {
                       <h4 className="font-semibold text-foreground" data-testid={`text-contact-item-title-${index}`}>
                         {info.title}
                       </h4>
-                      <p className="text-muted-foreground" data-testid={`text-contact-item-value-${index}`}>
-                        {info.value}
-                      </p>
+                      {info.link ? (
+                        <a 
+                          href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+                          data-testid={`link-${info.title.toLowerCase()}`}
+                        >
+                          {info.value}
+                        </a>
+                      ) : (
+                        <p className="text-muted-foreground" data-testid={`text-contact-item-value-${index}`}>
+                          {info.value}
+                        </p>
+                      )}
                     </div>
                   </div>
                 );
