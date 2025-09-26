@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
@@ -34,11 +35,12 @@ const contactInfo = [
     color: "accent"
   },
   {
-    icon: MessageCircle,
+    icon: SiWhatsapp,
     title: "WhatsApp",
     value: "+233 26 774 5148",
     color: "primary",
-    link: "https://wa.me/233267745148"
+    link: "https://wa.me/233267745148",
+    isButton: true
   }
 ];
 
@@ -134,6 +136,28 @@ export default function ContactSection() {
                   secondary: "bg-secondary/10 text-secondary",
                   accent: "bg-accent/10 text-accent"
                 };
+
+                // Bouton spécial pour WhatsApp
+                if (info.isButton && info.link) {
+                  return (
+                    <div key={info.title} className="flex items-center space-x-4" data-testid={`div-contact-item-${index}`}>
+                      <Button
+                        asChild
+                        className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-colors duration-300 flex items-center gap-3 w-full"
+                        data-testid="button-whatsapp"
+                      >
+                        <a 
+                          href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Icon className="h-6 w-6" />
+                          <span className="font-semibold">Contactez-nous sur WhatsApp</span>
+                        </a>
+                      </Button>
+                    </div>
+                  );
+                }
 
                 return (
                   <div key={info.title} className="flex items-center space-x-4" data-testid={`div-contact-item-${index}`}>
