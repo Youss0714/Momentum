@@ -5,19 +5,19 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     position: "PDG, TechCorp",
-    content: "Youss a livré une solution ERP exceptionnelle qui a transformé nos opérations commerciales. L'attention aux détails et l'approche professionnelle ont dépassé nos attentes.",
+    content: "Momentum group a livré une solution ERP exceptionnelle qui a transformé nos opérations commerciales. L'attention aux détails et l'approche professionnelle ont dépassé nos attentes.",
     color: "primary"
   },
   {
     name: "Michael Chen",
     position: "Directeur Commercial, TradingPro",
-    content: "La formation en trading fournie était exceptionnelle. Youss nous a aidés à comprendre les marchés et à développer des stratégies de trading efficaces et rentables.",
+    content: "La formation en trading fournie était exceptionnelle. Momentum group nous a aidés à comprendre les marchés et à développer des stratégies de trading efficaces et rentables.",
     color: "secondary"
   },
   {
     name: "Emily Rodriguez",
     position: "Fondatrice, StartupVentures",
-    content: "Travailler avec Youss sur notre site web e-commerce a été un tournant. La solution est moderne, performante et a complètement transformé notre présence digitale.",
+    content: "Travailler avec Momentum group sur notre site web e-commerce a été un tournant. La solution est moderne, performante et a complètement transformé notre présence digitale.",
     color: "accent"
   }
 ];

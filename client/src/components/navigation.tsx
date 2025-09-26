@@ -47,7 +47,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <span className="text-2xl font-bold text-primary font-sans cursor-pointer hover:text-primary/80 transition-colors" data-testid="text-logo">
-                Youss
+                Momentum group
               </span>
             </Link>
           </div>

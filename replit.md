@@ -1,8 +1,8 @@
-# Professional Services Website
+# Momentum group - Professional Services Website
 
 ## Overview
 
-This is a modern full-stack web application for a professional services business specializing in financial consulting, software development, trading education, and business solutions. The application features a responsive single-page website with a contact form system that allows potential clients to inquire about services.
+This is a modern full-stack web application for Momentum group, a professional services business specializing in mobile/desktop application development, professional website creation, trading education & training, and maritime transit logistics. The application features a responsive multi-page website with dedicated service pages and a contact form system that allows potential clients to inquire about services.
 
 ## User Preferences
 

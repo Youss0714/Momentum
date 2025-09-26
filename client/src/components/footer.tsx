@@ -36,7 +36,7 @@ export default function Footer() {
             data-testid="div-footer-brand"
           >
             <h3 className="text-3xl font-bold mb-4 font-sans" data-testid="text-footer-logo">
-              Youss
+              Momentum group
             </h3>
             <p className="text-primary-foreground/80 mb-6 max-w-md" data-testid="text-footer-description">
               Services professionnels spécialisés en développement, trading et logistique conçus pour élever votre entreprise vers de nouveaux sommets avec des solutions expertes et un support dédié.
@@ -136,7 +136,7 @@ export default function Footer() {
           data-testid="div-footer-copyright"
         >
           <p data-testid="text-copyright">
-            &copy; 2024 Youss Services Professionnels. Tous droits réservés.
+            &copy; 2024 Momentum group Services Professionnels. Tous droits réservés.
           </p>
         </motion.div>
       </div>

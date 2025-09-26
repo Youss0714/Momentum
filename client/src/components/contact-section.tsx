@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Courriel",
-    value: "youss@professional-services.com",
+    value: "contact@momentumgroup.com",
     color: "primary"
   },
   {

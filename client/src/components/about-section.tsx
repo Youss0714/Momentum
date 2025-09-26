@@ -42,7 +42,7 @@ export default function AboutSection() {
             data-testid="div-about-content"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 font-sans" data-testid="text-about-title">
-              À Propos de Youss
+              À Propos de Momentum group
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="text-about-description">
               Avec plus de 5 ans d'expérience dans le développement digital et les services professionnels, je me spécialise dans la fourniture de solutions complètes qui allient expertise technique et vision business.
@@ -123,7 +123,7 @@ export default function AboutSection() {
           >
             <img 
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-              alt="Professional portrait of Youss" 
+              alt="Professional portrait of Momentum group" 
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               data-testid="img-about-portrait"
             />
