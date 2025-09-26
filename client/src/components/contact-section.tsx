@@ -30,7 +30,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Localisation",
-    value: "New York, NY",
+    value: "Tema, (Greater ACCRA) GHANA",
     color: "accent"
   }
 ];
