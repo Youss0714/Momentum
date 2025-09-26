@@ -122,7 +122,7 @@ export default function AboutSection() {
             data-testid="div-about-image"
           >
             <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
+              src="@assets/WhatsApp Image 2025-09-26 à 22.38.59_44f7f5ca_1758926423817.jpg" 
               alt="Équipe professionnelle de Momentum group" 
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               data-testid="img-about-portrait"
