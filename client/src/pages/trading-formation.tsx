@@ -464,15 +464,14 @@ export default function TradingFormation() {
                   Formation Gratuite
                 </Button>
               </Link>
-              <Link href="/#contact">
-                <Button 
-                  size="lg" 
-                  className="bg-white text-primary border-2 border-white hover:bg-primary-foreground hover:text-primary shadow-lg"
-                  data-testid="button-calendar"
-                >
-                  Réserver Créneau
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="bg-secondary hover:bg-secondary/90"
+                onClick={goToContactForm}
+                data-testid="button-calendar"
+              >
+                Réserver Créneau
+              </Button>
             </div>
           </motion.div>
         </div>
