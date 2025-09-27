@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "wouter";
@@ -8,6 +8,7 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [location] = useLocation();
+  const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,17 @@ export default function Navigation() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
+        setServicesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
@@ -69,10 +81,9 @@ export default function Navigation() {
               )}
               
               {/* Services Dropdown */}
-              <div className="relative">
+              <div className="relative" ref={servicesRef}>
                 <button 
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
+                  onClick={() => setServicesOpen(!servicesOpen)}
                   className="flex items-center text-foreground hover:text-primary transition-colors duration-300 font-medium"
                   data-testid="button-nav-services"
                 >
@@ -82,14 +93,15 @@ export default function Navigation() {
                 
                 {servicesOpen && (
                   <div 
-                    onMouseEnter={() => setServicesOpen(true)}
-                    onMouseLeave={() => setServicesOpen(false)}
                     className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg py-2 z-50"
                     data-testid="dropdown-services"
                   >
                     {services.map((service, index) => (
                       <Link key={index} href={service.href}>
-                        <div className="px-4 py-2 text-foreground hover:bg-muted hover:text-primary transition-colors duration-200 cursor-pointer">
+                        <div 
+                          onClick={() => setServicesOpen(false)}
+                          className="px-4 py-2 text-foreground hover:bg-muted hover:text-primary transition-colors duration-200 cursor-pointer"
+                        >
                           {service.name}
                         </div>
                       </Link>
@@ -98,7 +110,10 @@ export default function Navigation() {
                       <>
                         <div className="border-t border-border my-2"></div>
                         <button 
-                          onClick={() => scrollToSection("services")}
+                          onClick={() => {
+                            scrollToSection("services");
+                            setServicesOpen(false);
+                          }}
                           className="w-full px-4 py-2 text-left text-foreground hover:bg-muted hover:text-primary transition-colors duration-200"
                         >
                           Voir Tous les Services
