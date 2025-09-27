@@ -42,7 +42,7 @@ export default function TransitMaritime() {
     {
       icon: <ArrowUpDown className="h-8 w-8" />,
       title: "Importations & exportations",
-      description: "Gestion complète de vos flux import/export avec expertise réglementaire"
+      description: "Import depuis la Chine et export depuis le Ghana avec expertise douanière complète"
     },
     {
       icon: <FileCheck className="h-8 w-8" />,
@@ -98,10 +98,10 @@ export default function TransitMaritime() {
   const routes = [
     { origin: "Tema (Ghana)", destination: "Europe", duration: "8-14 jours", frequency: "2x/semaine" },
     { origin: "Tema (Ghana)", destination: "Amérique du Nord", duration: "12-16 jours", frequency: "3x/semaine" },
-    { origin: "Tema (Ghana)", destination: "Asie", duration: "18-25 jours", frequency: "Daily" },
+    { origin: "Chine (Ports Partenaires)", destination: "Tema/Abidjan", duration: "18-25 jours", frequency: "Daily" },
+    { origin: "Shanghai/Shenzhen", destination: "Afrique de l'Ouest", duration: "20-28 jours", frequency: "3x/semaine" },
     { origin: "Abidjan", destination: "Europe", duration: "8-12 jours", frequency: "2x/semaine" },
-    { origin: "Ghana - Côte d'Ivoire", destination: "Méditerranée", duration: "6-10 jours", frequency: "4x/semaine" },
-    { origin: "Afrique de l'Ouest", destination: "Amérique du Sud", duration: "10-14 jours", frequency: "Weekly" }
+    { origin: "Ghana - Côte d'Ivoire", destination: "Méditerranée", duration: "6-10 jours", frequency: "4x/semaine" }
   ];
 
   const advantages = [
@@ -128,6 +128,13 @@ export default function TransitMaritime() {
   ];
 
   const caseStudies = [
+    {
+      title: "Import Machines Chine-Ghana",
+      industry: "Import & Manufacturing",
+      challenge: "Faciliter l'achat et transport de machines industrielles depuis la Chine vers Tema avec contraintes techniques",
+      solution: "Partenaires chinois vérifiés, négociation prix, containers spécialisés et dédouanement Tema",
+      results: ["Coûts réduits de 35%", "Qualité garantie", "Délais respectés"]
+    },
     {
       title: "Export Cacao Ghana-Europe",
       industry: "Agriculture & Export",
@@ -168,9 +175,9 @@ export default function TransitMaritime() {
                   <span className="text-blue-600 block">International</span>
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Experts en export maritime depuis le port de Tema (Ghana). 
-                  Partenariats stratégiques avec Abidjan, tarifs négociés et service personnalisé 
-                  pour optimiser vos expéditions vers l'international.
+                  Experts en import/export maritime depuis le port de Tema (Ghana). 
+                  Partenariats stratégiques avec la Chine, Abidjan et réseau mondial pour 
+                  faciliter vos achats en Chine et optimiser vos expéditions internationales.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
@@ -203,8 +210,8 @@ export default function TransitMaritime() {
                       </div>
                       <div className="space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span className="text-muted-foreground">Tema → Rotterdam</span>
-                          <span className="font-medium">J+12/14</span>
+                          <span className="text-muted-foreground">Shanghai → Tema</span>
+                          <span className="font-medium">J+22/25</span>
                         </div>
                         <div className="h-2 bg-blue-200 rounded-full">
                           <div className="h-2 bg-blue-600 rounded-full w-3/4"></div>
@@ -321,7 +328,7 @@ export default function TransitMaritime() {
               Principales Routes Maritimes
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Liaisons régulières depuis Tema et en partenariat avec Abidjan
+              Liaisons régulières depuis Tema, partenariats Chine-Afrique et collaboration Abidjan
             </p>
           </motion.div>
           
