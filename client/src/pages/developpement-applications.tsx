@@ -276,7 +276,7 @@ export default function DeveloppementApplications() {
                       ? 'bg-primary hover:bg-primary/90' 
                       : 'bg-secondary hover:bg-secondary/90'
                   }`}
-                  onClick={() => scrollToSection("contact")}
+                  onClick={goToContactForm}
                   data-testid={`button-pricing-${index}`}
                 >
                   Commencer le Projet

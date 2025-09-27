@@ -1,16 +1,29 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Ship, CheckCircle, ArrowRight, Anchor, Truck, FileText, TrendingUp, Box, ArrowUpDown, FileCheck } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 
 export default function TransitMaritime() {
+  const [, setLocation] = useLocation();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const goToContactForm = () => {
+    setLocation("/");
+    // Délai pour permettre le chargement de la page d'accueil
+    setTimeout(() => {
+      const contactElement = document.getElementById("contact");
+      if (contactElement) {
+        contactElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   const features = [
@@ -417,7 +430,7 @@ export default function TransitMaritime() {
                       ? 'bg-blue-600 hover:bg-blue-700' 
                       : 'bg-secondary hover:bg-secondary/90'
                   }`}
-                  onClick={() => scrollToSection("contact")}
+                  onClick={goToContactForm}
                   data-testid={`button-service-${index}`}
                 >
                   Demander un Devis

@@ -328,7 +328,7 @@ export default function SitesWebProfessionnels() {
                       ? 'bg-secondary hover:bg-secondary/90' 
                       : 'bg-primary hover:bg-primary/90'
                   }`}
-                  onClick={() => scrollToSection("contact")}
+                  onClick={goToContactForm}
                   data-testid={`button-pricing-${index}`}
                 >
                   Commencer le Projet

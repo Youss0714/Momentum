@@ -1,16 +1,29 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, TrendingUp, Users, BookOpen, Target, Award, CheckCircle, ArrowRight, BarChart3, DollarSign } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 
 export default function TradingFormation() {
+  const [, setLocation] = useLocation();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const goToContactForm = () => {
+    setLocation("/");
+    // Délai pour permettre le chargement de la page d'accueil
+    setTimeout(() => {
+      const contactElement = document.getElementById("contact");
+      if (contactElement) {
+        contactElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   const features = [
@@ -367,7 +380,7 @@ export default function TradingFormation() {
                       ? 'bg-primary hover:bg-primary/90' 
                       : 'bg-secondary hover:bg-secondary/90'
                   }`}
-                  onClick={() => scrollToSection("contact")}
+                  onClick={goToContactForm}
                   data-testid={`button-program-${index}`}
                 >
                   S'inscrire
