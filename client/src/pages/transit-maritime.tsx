@@ -519,8 +519,8 @@ export default function TransitMaritime() {
               </Link>
               <Button 
                 size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                variant="secondary"
+                className="bg-white text-blue-600 hover:bg-gray-100 border-0"
                 data-testid="button-tracking"
               >
                 Suivre Expédition
