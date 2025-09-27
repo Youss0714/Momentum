@@ -44,7 +44,7 @@ export default function DeveloppementApplications() {
   const pricing = [
     {
       name: "Application Mobile Simple",
-      price: "5 000€ - 15 000€",
+      price: "À partir de 1 000€",
       description: "Application avec fonctionnalités de base",
       features: [
         "Design UI/UX personnalisé",
@@ -57,7 +57,7 @@ export default function DeveloppementApplications() {
     },
     {
       name: "Application Complexe",
-      price: "15 000€ - 50 000€",
+      price: "À partir de 6 000€",
       description: "Solution complète avec fonctionnalités avancées",
       features: [
         "Architecture scalable",
