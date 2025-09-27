@@ -1,66 +1,59 @@
-# Momentum group - Professional Services Website
+# Momentum Group - Professional Digital Solutions Website
 
 ## Overview
+A professional French business website for Momentum Group offering digital solutions including app development, professional websites, trading & training services, and maritime transport consulting. The site features a modern design with multiple service pages and a contact form system.
 
-This is a modern full-stack web application for Momentum group, a professional services business specializing in mobile/desktop application development, professional website creation, trading education & training, and maritime transit logistics. The application features a responsive multi-page website with dedicated service pages and a contact form system that allows potential clients to inquire about services.
+## Project Architecture
+
+### Frontend (React + TypeScript)
+- **Framework**: React 18 with TypeScript
+- **Routing**: Wouter for client-side routing
+- **State Management**: TanStack Query v5 for server state
+- **UI Components**: Shadcn/ui with Radix UI primitives
+- **Styling**: Tailwind CSS with custom animations
+- **Build Tool**: Vite with custom configuration
+
+### Backend (Express + TypeScript)
+- **Framework**: Express.js with TypeScript
+- **Database**: PostgreSQL with Drizzle ORM
+- **Authentication**: Passport.js with bcrypt for password hashing
+- **API**: RESTful endpoints for contact form and user management
+- **Development**: tsx for TypeScript execution in development
+
+### Database Schema
+- **Users Table**: Basic user authentication (username, hashed password)
+- **Contacts Table**: Contact form submissions (name, email, service, message, timestamp)
+- **ORM**: Drizzle with Zod validation schemas
+
+## Key Features
+1. **Multi-page SPA**: Home, service pages for different business areas
+2. **Contact Form**: Validated contact form with backend storage
+3. **Professional Design**: Modern UI with French content
+4. **Responsive**: Mobile-first design with responsive components
+5. **Type Safety**: Full TypeScript coverage frontend to backend
+
+## Development Setup
+- **Port**: 5000 (configured for Replit environment)
+- **Host**: 0.0.0.0 with allowedHosts: true for Replit proxy
+- **Scripts**:
+  - `npm run dev`: Start development server
+  - `npm run build`: Build for production
+  - `npm run start`: Start production server
+
+## Recent Changes (Sept 27, 2025)
+- Fixed tsx command not found issue by updating package.json to use `npx tsx`
+- Verified Replit environment configuration (port 5000, host 0.0.0.0, allowedHosts: true)
+- Confirmed all routes working correctly
+- Application successfully running and tested
 
 ## User Preferences
+- Professional French business website
+- Clean, modern design with focus on digital services
+- Full-stack application with contact form functionality
+- PostgreSQL database integration required
 
-Preferred communication style: Simple, everyday language.
-
-## System Architecture
-
-### Frontend Architecture
-- **Framework**: React with TypeScript for type safety and modern development
-- **Styling**: Tailwind CSS with shadcn/ui component library for consistent, professional UI
-- **Router**: Wouter for lightweight client-side routing
-- **State Management**: TanStack Query for server state management and data fetching
-- **Forms**: React Hook Form with Zod validation for robust form handling
-- **Animations**: Framer Motion for smooth, professional animations and transitions
-
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript for full-stack type safety
-- **API Design**: RESTful API endpoints following standard HTTP conventions
-- **Error Handling**: Centralized error handling middleware with proper HTTP status codes
-- **Development**: Hot reloading with Vite integration for efficient development
-
-### Data Storage Solutions
-- **Database**: PostgreSQL configured via Drizzle ORM for type-safe database operations
-- **Connection**: Neon Database serverless driver for cloud-based PostgreSQL
-- **Schema Management**: Drizzle Kit for database migrations and schema management
-- **Fallback Storage**: In-memory storage implementation for development/testing scenarios
-
-### Component Architecture
-- **UI Components**: Radix UI primitives wrapped in custom shadcn/ui components
-- **Layout**: Section-based architecture with reusable components (Hero, Services, About, Portfolio, Contact, Footer)
-- **Responsive Design**: Mobile-first approach with breakpoint-specific optimizations
-- **Theme System**: CSS custom properties for consistent color scheme and spacing
-
-### Build System
-- **Bundler**: Vite for fast development and optimized production builds
-- **TypeScript**: Strict configuration with path mapping for clean imports
-- **Asset Handling**: Static asset serving with proper caching strategies
-- **Production**: Separate client and server builds with ESM module format
-
-## External Dependencies
-
-### Database Services
-- **Neon Database**: Serverless PostgreSQL database hosting
-- **Drizzle ORM**: Type-safe database toolkit with PostgreSQL adapter
-
-### UI Framework Dependencies
-- **Radix UI**: Unstyled, accessible UI primitives for complex components
-- **Tailwind CSS**: Utility-first CSS framework for rapid styling
-- **Framer Motion**: Animation library for smooth user interactions
-- **Lucide React**: Icon library providing consistent iconography
-
-### Development Tools
-- **TanStack Query**: Server state management and caching
-- **React Hook Form**: Form state management with validation
-- **Zod**: Schema validation for type-safe data handling
-- **date-fns**: Date manipulation and formatting utilities
-
-### Replit Integration
-- **Development Plugins**: Replit-specific Vite plugins for enhanced development experience
-- **Runtime Error Handling**: Specialized error overlay for development debugging
+## Services Offered
+1. **Développement d'Applications**: Mobile & Desktop app development
+2. **Sites Web Professionnels**: Professional website creation with SEO
+3. **Trading & Formation**: Trading and training services
+4. **Transit Maritime**: Maritime transport consulting
