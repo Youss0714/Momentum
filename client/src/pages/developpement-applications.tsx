@@ -1,16 +1,29 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Smartphone, Monitor, Users, Zap, Shield, CheckCircle, ArrowRight } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 
 export default function DeveloppementApplications() {
+  const [, setLocation] = useLocation();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const goToContactForm = () => {
+    setLocation("/");
+    // Délai pour permettre le chargement de la page d'accueil
+    setTimeout(() => {
+      const contactElement = document.getElementById("contact");
+      if (contactElement) {
+        contactElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   const features = [
@@ -353,16 +366,15 @@ export default function DeveloppementApplications() {
               Consultation gratuite et devis détaillé sous 48h.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#contact">
-                <Button 
-                  size="lg" 
-                  variant="secondary"
-                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-                  data-testid="button-contact-form"
-                >
-                  Formulaire de Contact
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                variant="secondary"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                onClick={goToContactForm}
+                data-testid="button-contact-form"
+              >
+                Formulaire de Contact
+              </Button>
               <Button 
                 size="lg" 
                 variant="outline"
