@@ -57,7 +57,7 @@ export default function SitesWebProfessionnels() {
   const pricing = [
     {
       name: "Site Vitrine",
-      price: "1 500€ - 3 000€",
+      price: "300€",
       description: "Parfait pour présenter votre activité",
       features: [
         "5-8 pages optimisées",
@@ -70,7 +70,7 @@ export default function SitesWebProfessionnels() {
     },
     {
       name: "Site Business",
-      price: "3 000€ - 8 000€",
+      price: "500€",
       description: "Solution complète pour entreprises dynamiques",
       features: [
         "10-15 pages sur mesure",
@@ -85,7 +85,7 @@ export default function SitesWebProfessionnels() {
     },
     {
       name: "E-commerce",
-      price: "5 000€ - 15 000€",
+      price: "800€",
       description: "Boutique en ligne professionnelle",
       features: [
         "Catalogue produits illimité",
