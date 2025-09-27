@@ -402,7 +402,6 @@ export default function TransitMaritime() {
                   </div>
                 )}
                 <h3 className="text-2xl font-bold text-foreground mb-2">{service.name}</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-2">{service.price}</p>
                 <p className="text-muted-foreground mb-6">{service.description}</p>
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, featureIndex) => (
