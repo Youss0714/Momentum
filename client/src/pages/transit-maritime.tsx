@@ -96,12 +96,12 @@ export default function TransitMaritime() {
   ];
 
   const routes = [
-    { origin: "Europe", destination: "Asie", duration: "18-25 jours", frequency: "Daily" },
-    { origin: "Europe", destination: "Amérique du Nord", duration: "12-16 jours", frequency: "3x/semaine" },
-    { origin: "Europe", destination: "Afrique", duration: "8-14 jours", frequency: "2x/semaine" },
-    { origin: "Asie", destination: "Amérique", duration: "14-21 jours", frequency: "Daily" },
-    { origin: "Moyen-Orient", destination: "Europe", duration: "12-18 jours", frequency: "4x/semaine" },
-    { origin: "Méditerranée", destination: "Afrique du Nord", duration: "3-7 jours", frequency: "Daily" }
+    { origin: "Tema (Ghana)", destination: "Europe", duration: "8-14 jours", frequency: "2x/semaine" },
+    { origin: "Tema (Ghana)", destination: "Amérique du Nord", duration: "12-16 jours", frequency: "3x/semaine" },
+    { origin: "Tema (Ghana)", destination: "Asie", duration: "18-25 jours", frequency: "Daily" },
+    { origin: "Abidjan", destination: "Europe", duration: "8-12 jours", frequency: "2x/semaine" },
+    { origin: "Ghana - Côte d'Ivoire", destination: "Méditerranée", duration: "6-10 jours", frequency: "4x/semaine" },
+    { origin: "Afrique de l'Ouest", destination: "Amérique du Sud", duration: "10-14 jours", frequency: "Weekly" }
   ];
 
   const advantages = [
@@ -129,18 +129,18 @@ export default function TransitMaritime() {
 
   const caseStudies = [
     {
-      title: "Import Textile Asie-Europe",
-      industry: "Mode & Textile",
-      challenge: "Réduire les coûts logistiques de 40% tout en maintenant la qualité et les délais",
-      solution: "Mise en place groupage LCL optimisé avec consolidation Hong Kong et service porte-à-porte",
-      results: ["-45% coûts transport", "Délais respectés à 98%", "Zéro avarie sur 12 mois"]
+      title: "Export Cacao Ghana-Europe",
+      industry: "Agriculture & Export",
+      challenge: "Optimiser l'export de cacao en vrac depuis Tema vers les ports européens avec contraintes de qualité",
+      solution: "Containers spécialisés 20' avec contrôle température, certification Fair Trade et suivi GPS",
+      results: ["100% qualité préservée", "Délais réduits de 25%", "Certification maintenue"]
     },
     {
-      title: "Export Équipements Industriels",
-      industry: "Industrie",
-      challenge: "Transport de machines-outils lourdes vers l'Afrique avec contraintes techniques",
-      solution: "Container 40' HC avec calage sur-mesure, assurance spéciale et manutention adaptée",
-      results: ["Transport sécurisé", "Installation réussie", "Client satisfait à 100%"]
+      title: "Export Or et Minerais",
+      industry: "Mining & Resources",
+      challenge: "Transport sécurisé de minerais précieux depuis Tema vers marchés internationaux",
+      solution: "Partenariat Tema-Abidjan, containers haute sécurité, escorte et assurance spéciale",
+      results: ["Zéro perte", "Conformité 100%", "Expansion régionale réussie"]
     }
   ];
 
@@ -168,9 +168,9 @@ export default function TransitMaritime() {
                   <span className="text-blue-600 block">International</span>
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Solutions logistiques maritimes complètes pour vos imports/exports. 
-                  Réseau mondial, tarifs négociés et service personnalisé pour optimiser 
-                  vos flux de marchandises intercontinentaux.
+                  Experts en export maritime depuis le port de Tema (Ghana). 
+                  Partenariats stratégiques avec Abidjan, tarifs négociés et service personnalisé 
+                  pour optimiser vos expéditions vers l'international.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
@@ -203,8 +203,8 @@ export default function TransitMaritime() {
                       </div>
                       <div className="space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span className="text-muted-foreground">Shanghai → Hamburg</span>
-                          <span className="font-medium">J+18/25</span>
+                          <span className="text-muted-foreground">Tema → Rotterdam</span>
+                          <span className="font-medium">J+12/14</span>
                         </div>
                         <div className="h-2 bg-blue-200 rounded-full">
                           <div className="h-2 bg-blue-600 rounded-full w-3/4"></div>
@@ -321,7 +321,7 @@ export default function TransitMaritime() {
               Principales Routes Maritimes
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Liaisons régulières vers tous les continents
+              Liaisons régulières depuis Tema et en partenariat avec Abidjan
             </p>
           </motion.div>
           
