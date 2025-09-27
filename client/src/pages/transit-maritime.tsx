@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Ship, Globe, MapPin, Clock, Shield, CheckCircle, ArrowRight, Anchor, Truck } from "lucide-react";
+import { ArrowLeft, Ship, CheckCircle, ArrowRight, Anchor, Truck, FileText, TrendingUp, Box, ArrowUpDown, FileCheck } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
@@ -15,29 +15,39 @@ export default function TransitMaritime() {
 
   const features = [
     {
+      icon: <Truck className="h-8 w-8" />,
+      title: "Services de transport et logistique",
+      description: "Solutions complètes de transport multimodal et gestion logistique intégrée"
+    },
+    {
       icon: <Ship className="h-8 w-8" />,
-      title: "Transport Maritime",
-      description: "Fret conteneurisé FCL/LCL vers tous les ports mondiaux avec tarifs négociés"
+      title: "Expédition / Shipping",
+      description: "Fret maritime FCL/LCL avec suivi complet et livraison sécurisée"
     },
     {
-      icon: <Globe className="h-8 w-8" />,
-      title: "Réseau International",
-      description: "Partenaires agréés dans 150+ pays pour service porte-à-porte optimal"
+      icon: <FileText className="h-8 w-8" />,
+      title: "Contrats",
+      description: "Gestion contractuelle et négociation de termes commerciaux avantageux"
     },
     {
-      icon: <MapPin className="h-8 w-8" />,
-      title: "Suivi Temps Réel",
-      description: "Tracking GPS et notifications automatiques à chaque étape du transport"
+      icon: <TrendingUp className="h-8 w-8" />,
+      title: "Commerce / Trading",
+      description: "Accompagnement dans vos opérations commerciales internationales"
     },
     {
-      icon: <Clock className="h-8 w-8" />,
-      title: "Délais Optimisés",
-      description: "Routes directes et connexions privilégiées pour raccourcir les transits"
+      icon: <Box className="h-8 w-8" />,
+      title: "Marchandises générales",
+      description: "Transport sécurisé de tous types de marchandises et produits industriels"
     },
     {
-      icon: <Shield className="h-8 w-8" />,
-      title: "Assurance Complète",
-      description: "Couverture all-risks et responsabilité civile pour sécuriser vos marchandises"
+      icon: <ArrowUpDown className="h-8 w-8" />,
+      title: "Importations & exportations",
+      description: "Gestion complète de vos flux import/export avec expertise réglementaire"
+    },
+    {
+      icon: <FileCheck className="h-8 w-8" />,
+      title: "Dédouanement et transit",
+      description: "Formalités douanières et procédures de transit simplifiées"
     }
   ];
 
@@ -277,7 +287,7 @@ export default function TransitMaritime() {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
