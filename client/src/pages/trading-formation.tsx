@@ -467,7 +467,7 @@ export default function TradingFormation() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                className="bg-white/10 border-white text-white hover:bg-white hover:text-primary"
                 data-testid="button-calendar"
               >
                 Réserver Créneau
