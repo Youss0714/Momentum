@@ -57,7 +57,7 @@ export default function TradingFormation() {
   const programs = [
     {
       name: "Formation Débutant",
-      price: "899€",
+      price: "300€",
       duration: "6 semaines",
       description: "Bases solides du trading et premiers pas en bourse",
       features: [
@@ -71,7 +71,7 @@ export default function TradingFormation() {
     },
     {
       name: "Programme Avancé",
-      price: "1 990€",
+      price: "600€",
       duration: "12 semaines",
       description: "Stratégies professionnelles et trading algorithmique",
       features: [
@@ -87,7 +87,7 @@ export default function TradingFormation() {
     },
     {
       name: "Coaching VIP",
-      price: "4 500€",
+      price: "800€",
       duration: "6 mois",
       description: "Accompagnement exclusif pour traders ambitieux",
       features: [
