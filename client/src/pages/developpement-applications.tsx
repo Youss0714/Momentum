@@ -384,7 +384,7 @@ export default function DeveloppementApplications() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-medium"
                 data-testid="button-phone-call"
               >
                 Appel Téléphonique
