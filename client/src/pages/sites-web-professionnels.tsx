@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import SEOHead, { createServiceSchema } from "@/components/seo-head";
 
 export default function SitesWebProfessionnels() {
   const [, setLocation] = useLocation();
@@ -127,8 +128,23 @@ export default function SitesWebProfessionnels() {
     }
   ];
 
+  // Schema pour le service de sites web professionnels
+  const serviceSchema = createServiceSchema(
+    "Création de Sites Web Professionnels",
+    "Création de sites web professionnels responsive avec SEO optimisé, performances élevées et sécurité renforcée. Sites vitrines, business et e-commerce avec CMS intégré, analytics et formation incluse.",
+    "À partir de 300€"
+  );
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Création de Sites Web Professionnels SEO - Momentum Group"
+        description="Création de sites web professionnels responsive avec référencement SEO optimisé, performances ultra-rapides et sécurité renforcée. Sites vitrines, business et e-commerce sur mesure. Hébergement inclus, formation équipe et support prioritaire."
+        keywords="création site web professionnel, site internet entreprise, développement web SEO, site responsive, e-commerce, site vitrine, WordPress, Shopify, référencement naturel, Momentum Group"
+        canonical="/sites-web-professionnels"
+        ogType="service"
+        structuredData={serviceSchema}
+      />
       <Navigation />
       
       {/* Hero Section */}

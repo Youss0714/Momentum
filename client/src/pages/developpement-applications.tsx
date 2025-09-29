@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import SEOHead, { createServiceSchema } from "@/components/seo-head";
 
 export default function DeveloppementApplications() {
   const [, setLocation] = useLocation();
@@ -121,8 +122,23 @@ export default function DeveloppementApplications() {
     }
   ];
 
+  // Schema pour le service de développement d'applications
+  const serviceSchema = createServiceSchema(
+    "Développement d'Applications Mobiles et Desktop",
+    "Services experts en développement d'applications natives iOS et Android, applications desktop multiplateformes, et applications web progressives. Solutions sur mesure avec intégrations API, sécurité avancée et interface utilisateur intuitive.",
+    "À partir de 1 000€"
+  );
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Développement d'Applications Mobiles et Desktop - Momentum Group"
+        description="Développement d'applications mobiles natives iOS et Android, applications desktop cross-platform et PWA modernes. Solutions complètes avec UI/UX personnalisé, intégrations API, sécurité RGPD et performances optimales. Devis gratuit sous 48h."
+        keywords="développement application mobile, application iOS Android, développement desktop, application native, React Native, PWA, développement logiciel, intégration API, sécurité RGPD, Momentum Group"
+        canonical="/developpement-applications"
+        ogType="service"
+        structuredData={serviceSchema}
+      />
       <Navigation />
       
       {/* Hero Section */}

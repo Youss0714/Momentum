@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import SEOHead, { createServiceSchema } from "@/components/seo-head";
 
 export default function TransitMaritime() {
   const [, setLocation] = useLocation();
@@ -170,8 +171,23 @@ export default function TransitMaritime() {
     }
   ];
 
+  // Schema pour le service de transit maritime
+  const serviceSchema = createServiceSchema(
+    "Transit Maritime et Commerce International",
+    "Services complets de transit maritime, import/export, dédouanement et logistique internationale. Expertise Ghana-Chine avec gestion contractuelle et transport multimodal sécurisé.",
+    "Sur devis"
+  );
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Transit Maritime et Commerce International - Momentum Group"
+        description="Services experts en transit maritime, import/export Ghana-Chine, dédouanement et logistique internationale. Transport FCL/LCL, gestion contractuelle, formalités douanières et tracking complet. Solutions sur mesure pour votre commerce international."
+        keywords="transit maritime, import export, commerce international, dédouanement, logistique, fret maritime, Ghana Chine, transport international, FCL LCL, Momentum Group"
+        canonical="/transit-maritime"
+        ogType="service"
+        structuredData={serviceSchema}
+      />
       <Navigation />
       
       {/* Hero Section */}

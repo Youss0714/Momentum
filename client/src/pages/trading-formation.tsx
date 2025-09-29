@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import SEOHead, { createServiceSchema } from "@/components/seo-head";
 
 export default function TradingFormation() {
   const [, setLocation] = useLocation();
@@ -144,8 +145,23 @@ export default function TradingFormation() {
     { value: "€2.3M", label: "Gains cumulés élèves" }
   ];
 
+  // Schema pour le service de trading et formation
+  const serviceSchema = createServiceSchema(
+    "Formation Trading et Investissement",
+    "Formation complète en trading et investissement financier avec coaching personnalisé, analyse technique, gestion des risques et certification professionnelle. Programmes adaptés du débutant au trader confirmé.",
+    "À partir de 300€"
+  );
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Formation Trading et Investissement - Momentum Group"
+        description="Formation trading complète avec coaching personnalisé, analyse technique professionnelle et gestion des risques. Programmes débutant à expert avec certification. Simulateur de trading et support 24/7. Devenez trader rentable avec nos méthodes éprouvées."
+        keywords="formation trading, investissement bourse, coaching trading, analyse technique, gestion risques, devenir trader, formation finance, bourse débutant, stratégies trading, Momentum Group"
+        canonical="/trading-formation"
+        ogType="service"
+        structuredData={serviceSchema}
+      />
       <Navigation />
       
       {/* Hero Section */}
