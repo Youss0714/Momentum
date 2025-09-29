@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Smartphone, Monitor, Users, Zap, Shield, CheckCircle, ArrowRight } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 
 export default function DeveloppementApplications() {
   const [, setLocation] = useLocation();
+  
+  // Force scroll to top when component mounts to show hero section
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
