@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import { useLocation } from "wouter";
 
 const projects = [
   {
@@ -7,31 +8,29 @@ const projects = [
     description: "Système de gestion d'entreprise complet avec contrôle d'inventaire, suivi des ventes et gestion clientèle.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
     alt: "Tableau de bord de gestion d'entreprise YGestion",
-    technologies: ["React", "Node.js", "MongoDB"]
+    technologies: ["React", "Node.js", "MongoDB"],
+    route: "/developpement-applications"
   },
   {
     title: "Analyses de Trading",
     description: "Plateforme de trading avancée avec analyse de marché en temps réel et outils de gestion de portefeuille.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
     alt: "Plateforme d'analyse financière avec graphiques et diagrammes",
-    technologies: ["Python", "Django", "PostgreSQL"]
+    technologies: ["Python", "Django", "PostgreSQL"],
+    route: "/trading-formation"
   },
   {
     title: "Plateforme Logistique",
     description: "Solution de transit maritime complète avec suivi en temps réel et gestion automatisée des expéditions.",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
     alt: "Interface de gestion logistique avec tracking maritime",
-    technologies: ["Vue.js", "Laravel", "MySQL"]
+    technologies: ["Vue.js", "Laravel", "MySQL"],
+    route: "/transit-maritime"
   }
 ];
 
 export default function PortfolioSection() {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const [, setLocation] = useLocation();
 
   return (
     <section id="portfolio" className="py-20 bg-background" data-testid="section-portfolio">
@@ -104,7 +103,7 @@ export default function PortfolioSection() {
                 </div>
                 
                 <button 
-                  onClick={scrollToContact}
+                  onClick={() => setLocation(project.route)}
                   className="text-primary font-semibold hover:text-primary/80 transition-colors duration-300 flex items-center"
                   data-testid={`button-view-details-${index}`}
                 >
